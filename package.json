@@ -1,5 +1,30 @@
 {
+  "name": "django-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "engines": {
     "node": "12.x"
+  },
+  "scripts": {
+    "build": "tailwindcss build ./static/css/styles.css -c ./tailwind.config.js -o ./static/css/dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joboa/junne-learns.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joboa/junne-learns/issues"
+  },
+  "homepage": "https://github.com/Joboa/junne-learns#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "clean-css-cli": "^5.3.3",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^2.2.15"
   }
 }
