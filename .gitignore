@@ -1,4 +1,5 @@
 # Byte-compiled / optimized / DLL files
+j-learns
 __pycache__/
 *.py[cod]
 *$py.class
