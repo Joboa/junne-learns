@@ -140,6 +140,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Tailwind config
 TAILWIND_APP_NAME = 'theme'
 # NPM_BIN_PATH = r"C:\\Program Files\\nodejs\\npm.cmd"
-NPM_BIN_PATH = '/app/.heroku/node/bin/npm'
+# NPM_BIN_PATH = '/app/.heroku/node/bin/npm'
+NPM_BIN_PATH = "/usr/local/bin/npm"
 # heroku config
 django_heroku.settings(locals())
