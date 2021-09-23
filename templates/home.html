@@ -1,26 +1,83 @@
-<!-- {% load static %} -->
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static '/css/dist/styles.css' %}">
-  <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-  <title>Junne Learns</title>
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<!-- <div class="alert alert-warning text-center" role="alert">
+  Welcome to Junne learns!
+</div> -->
+
+<div class="grad-line"></div>
+
+<div id="bg-image" style=" background-image: url('../static/images/jas-1.jpg');">
+  <div class="welcome-message">
+      <h2 style="font-weight: 700; color:black">Welcome to Junne Learns Site!</h2>
+
+      <button class="btn btn-primary">Check courses</button>
+  </div>
+</div>
 
 
-</head>
-<body class="bg-grey-lightest font-serif leading-normal tracking-normal">
+<div class="grad-line"></div>
 
-  <div class="container mx-auto">
-    <section class="flex items-center justify-center h-screen">
-      <h1 class="text-1xl">Junne Learns...we'll be live soon!</h1><br>
-    </section>
+<div class="courses">
+  COURSES
+</div>
 
+<div class="row">
+  <div class="col-lg">
+    <div class="card text-white mb-4 courses-board-2">
+      <div class="card-header"></div>
+      <div class="card-body">
+        <h5 class="card-title">Core Mathematics</h5>
+        <p class="card-text">
+          <button class="btn btn-primary">Explore course</button>
+        </p>
+      </div>
+    </div>
   </div>
 
+  <div class="col-lg">
+    <div class="card text-white  mb-4 courses-board-1">
+      <div class="card-header"></div>
+      <div class="card-body">
+        <h5 class="card-title">Elective Mathematics</h5>
+        <p class="card-text">
+          <button class="btn btn-primary">Explore course</button>
+        </p>
+      </div>
+    </div>
+  </div>
 
-</body>
-</html>
+</div>
+
+
+<div class="row">
+  <div class="col-lg">
+    <div class="card text-white mb-4 courses-board-2">
+      <div class="card-header"></div>
+      <div class="card-body">
+        <h5 class="card-title">Integrated Science (Theory)</h5>
+        <p class="card-text">
+          <button class="btn btn-primary">Explore course</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg">
+    <div class="card text-white  mb-4 courses-board-1">
+      <div class="card-header"></div>
+      <div class="card-body">
+        <h5 class="card-title">Integrated Science (Practicals)</h5>
+        <p class="card-text">
+          <button class="btn btn-primary">Explore course</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

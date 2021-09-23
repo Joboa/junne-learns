@@ -1,0 +1,73 @@
+<!-- {% load static %} -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+  <link rel="shortcut icon" class="rounded-circle" href="{% static '/images/jas-1.jpg' %}">
+  <link rel="stylesheet" href="{% static '/css/style.css' %}">
+  <title>{% block title %} Junne Learns{% endblock %}</title>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="{% static '/images/jas-1.jpg' %}" alt="" width="30" height="30" class="d-inline-block align-text-top rounded-circle">
+          JunneLearns
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Submit</a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <button onclick="topFunction()" id="back-to-top" title="Go to top">Top</button>
+
+
+
+    {% block content %}
+    {% endblock content %}
+
+    <!-- footer -->
+    <!-- Footer -->
+    <footer class="page-footer font-small blue bg-light">
+    <div class="grad-line"></div>
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2021 Copyright</div>
+      <div class="footer-copyright text-center py-3">+=junne-learns=+</div>
+      
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+  </div>
+
+    {% block javascript %}
+    <script src="{% static '/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/backToTop.js' %}"></script>
+    {% endblock javascript %}  
+
+
+</body>
+</html>
